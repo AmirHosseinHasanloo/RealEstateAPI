@@ -1,6 +1,5 @@
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/bin/Debug/net8.0/appsettings.Development.json
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/bin/Debug/net8.0/appsettings.json
-/home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/bin/Debug/net8.0/RealStateAPI.staticwebassets.endpoints.json
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/bin/Debug/net8.0/RealStateAPI
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/bin/Debug/net8.0/RealStateAPI.deps.json
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/bin/Debug/net8.0/RealStateAPI.runtimeconfig.json
@@ -217,9 +216,7 @@
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/scopedcss/bundle/RealStateAPI.styles.css
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets.build.json
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets.development.json
-/home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets/msbuild.RealStateAPI.Microsoft.AspNetCore.StaticWebAssets.props
-/home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets/msbuild.RealStateAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets/msbuild.build.RealStateAPI.props
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RealStateAPI.props
 /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RealStateAPI.props

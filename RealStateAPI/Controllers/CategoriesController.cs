@@ -20,14 +20,14 @@ namespace RealStateAPI.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_context.Categories.ToList());
+            return Ok(_context.Category.ToList());
         }
 
         // GET api/<CategoriesController>/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            return Ok(_context.Categories.Find(id));
+            return Ok(_context.Category.Find(id));
         }
 
         // POST api/<CategoriesController>
@@ -36,7 +36,7 @@ namespace RealStateAPI.Controllers
         {
             if (category != null)
             {
-                _context.Categories.Add(category);
+                _context.Category.Add(category);
                 _context.SaveChanges();
                 return StatusCode(StatusCodes.Status201Created, "object successfully added.");
             }
@@ -48,9 +48,9 @@ namespace RealStateAPI.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Category category)
         {
-            if (_context.Categories.Any(c => c.Id == id))
+            if (_context.Category.Any(c => c.Id == id))
             {
-                _context.Categories.Update(category);
+                _context.Category.Update(category);
                 _context.SaveChanges();
                 return StatusCode(StatusCodes.Status200OK, "Category updated successfully.");
             }
@@ -62,10 +62,10 @@ namespace RealStateAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var category = _context.Categories.SingleOrDefault(c => c.Id == id);
+            var category = _context.Category.SingleOrDefault(c => c.Id == id);
             if (category != null)
             {
-                _context.Categories.Remove(category);
+                _context.Category.Remove(category);
                 _context.SaveChanges();
                 return StatusCode(StatusCodes.Status200OK, "Category deleted successfully.");
             }

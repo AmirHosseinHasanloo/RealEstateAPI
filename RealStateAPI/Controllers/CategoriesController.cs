@@ -17,26 +17,32 @@ namespace RealStateAPI.Controllers
         }
 
         // GET: api/<CategoriesController>
-        [HttpGet]
+        [HttpGet("GetAll")]
         public IActionResult Get()
         {
-            return Ok(_context.Category.ToList());
+            return Ok(_context.Categories.ToList());
         }
 
         // GET api/<CategoriesController>/5
-        [HttpGet("{id}")]
+        [HttpGet("GetById/{id}")]
         public IActionResult Get(int id)
         {
-            return Ok(_context.Category.Find(id));
+            return Ok(_context.Categories.Find(id));
+        }
+
+        [HttpGet("[action]")]
+        public IActionResult SortCategories()
+        {
+            return Ok(_context.Categories.OrderByDescending(c => c.Name).ToList());
         }
 
         // POST api/<CategoriesController>
-        [HttpPost]
+        [HttpPost("Add")]
         public IActionResult Post([FromBody] Category category)
         {
-            if (category != null)
+            if (ModelState.IsValid)
             {
-                _context.Category.Add(category);
+                _context.Categories.Add(category);
                 _context.SaveChanges();
                 return StatusCode(StatusCodes.Status201Created, "object successfully added.");
             }
@@ -45,12 +51,12 @@ namespace RealStateAPI.Controllers
         }
 
         // PUT api/<CategoriesController>/5
-        [HttpPut("{id}")]
+        [HttpPut("Update/{id}")]
         public IActionResult Put(int id, [FromBody] Category category)
         {
-            if (_context.Category.Any(c => c.Id == id))
+            if (_context.Categories.Any(c => c.Id == id))
             {
-                _context.Category.Update(category);
+                _context.Categories.Update(category);
                 _context.SaveChanges();
                 return StatusCode(StatusCodes.Status200OK, "Category updated successfully.");
             }
@@ -59,13 +65,13 @@ namespace RealStateAPI.Controllers
         }
 
         // DELETE api/<CategoriesController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {
-            var category = _context.Category.SingleOrDefault(c => c.Id == id);
+            var category = _context.Categories.SingleOrDefault(c => c.Id == id);
             if (category != null)
             {
-                _context.Category.Remove(category);
+                _context.Categories.Remove(category);
                 _context.SaveChanges();
                 return StatusCode(StatusCodes.Status200OK, "Category deleted successfully.");
             }

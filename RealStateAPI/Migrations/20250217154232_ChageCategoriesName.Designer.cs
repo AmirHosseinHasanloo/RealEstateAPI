@@ -11,8 +11,8 @@ using RealStateAPI.Context;
 namespace RealStateAPI.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20250217152039_ValidationModels")]
-    partial class ValidationModels
+    [Migration("20250217154232_ChageCategoriesName")]
+    partial class ChageCategoriesName
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,7 +44,7 @@ namespace RealStateAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Category");
                 });
 #pragma warning restore 612, 618
         }

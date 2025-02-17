@@ -244,3 +244,989 @@ CREATE TABLE [Categories] (
 2025-02-17 18:53:43.363 +03:30 [DBG] 'ApiDbContext' disposed.
 2025-02-17 18:53:43.365 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
 2025-02-17 18:53:43.367 +03:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-02-17 19:08:35.090 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-17 19:08:35.210 +03:30 [DBG] Hosting starting
+2025-02-17 19:08:35.258 +03:30 [INF] Now listening on: http://localhost:5168
+2025-02-17 19:08:35.258 +03:30 [DBG] Loaded hosting startup assembly RealStateAPI
+2025-02-17 19:08:35.258 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-17 19:08:35.259 +03:30 [INF] Hosting environment: Development
+2025-02-17 19:08:35.259 +03:30 [INF] Content root path: /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI
+2025-02-17 19:08:35.259 +03:30 [DBG] Hosting started
+2025-02-17 19:08:35.759 +03:30 [DBG] Connection id "0HNAFD4I6KLD9" received FIN.
+2025-02-17 19:08:35.764 +03:30 [DBG] Connection id "0HNAFD4I6KLD9" accepted.
+2025-02-17 19:08:35.765 +03:30 [DBG] Connection id "0HNAFD4I6KLD9" started.
+2025-02-17 19:08:35.769 +03:30 [DBG] Connection id "0HNAFD4I6KLD9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:08:35.771 +03:30 [DBG] Connection id "0HNAFD4I6KLD9" disconnecting.
+2025-02-17 19:08:35.774 +03:30 [DBG] Connection id "0HNAFD4I6KLD9" stopped.
+2025-02-17 19:08:36.950 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" accepted.
+2025-02-17 19:08:36.951 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" started.
+2025-02-17 19:08:37.114 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger - null null
+2025-02-17 19:08:37.126 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-17 19:08:37.184 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" completed keep alive response.
+2025-02-17 19:08:37.188 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger - 301 0 null 78.5485ms
+2025-02-17 19:08:37.288 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2025-02-17 19:08:37.428 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" completed keep alive response.
+2025-02-17 19:08:37.429 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 140.4404ms
+2025-02-17 19:08:37.543 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" received FIN.
+2025-02-17 19:08:37.544 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/swagger-ui.css - null null
+2025-02-17 19:08:37.544 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:08:37.546 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" disconnecting.
+2025-02-17 19:08:37.558 +03:30 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2025-02-17 19:08:37.591 +03:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-02-17 19:08:37.591 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/swagger-ui.css - 499 152034 text/css 47.4197ms
+2025-02-17 19:08:37.602 +03:30 [DBG] Connection id "0HNAFD4I6KLDA" stopped.
+2025-02-17 19:08:37.787 +03:30 [DBG] Connection id "0HNAFD4I6KLDB" received FIN.
+2025-02-17 19:08:37.787 +03:30 [DBG] Connection id "0HNAFD4I6KLDB" accepted.
+2025-02-17 19:08:37.788 +03:30 [DBG] Connection id "0HNAFD4I6KLDB" started.
+2025-02-17 19:08:37.788 +03:30 [DBG] Connection id "0HNAFD4I6KLDB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:08:37.788 +03:30 [DBG] Connection id "0HNAFD4I6KLDB" disconnecting.
+2025-02-17 19:08:37.789 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/favicon-32x32.png - null null
+2025-02-17 19:08:37.790 +03:30 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2025-02-17 19:08:37.791 +03:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-02-17 19:08:37.791 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/favicon-32x32.png - 499 628 image/png 2.4214ms
+2025-02-17 19:08:37.792 +03:30 [DBG] Connection id "0HNAFD4I6KLDB" stopped.
+2025-02-17 19:08:37.841 +03:30 [DBG] Connection id "0HNAFD4I6KLDC" accepted.
+2025-02-17 19:08:37.841 +03:30 [DBG] Connection id "0HNAFD4I6KLDC" started.
+2025-02-17 19:08:37.842 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2025-02-17 19:08:38.139 +03:30 [DBG] Connection id "0HNAFD4I6KLDC" completed keep alive response.
+2025-02-17 19:08:38.140 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 297.4756ms
+2025-02-17 19:09:05.197 +03:30 [DBG] Connection id "0HNAFD4I6KLDD" received FIN.
+2025-02-17 19:09:05.198 +03:30 [DBG] Connection id "0HNAFD4I6KLDD" accepted.
+2025-02-17 19:09:05.198 +03:30 [DBG] Connection id "0HNAFD4I6KLDD" started.
+2025-02-17 19:09:05.198 +03:30 [DBG] Connection id "0HNAFD4I6KLDD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:09:05.199 +03:30 [DBG] Connection id "0HNAFD4I6KLDE" accepted.
+2025-02-17 19:09:05.199 +03:30 [DBG] Connection id "0HNAFD4I6KLDD" disconnecting.
+2025-02-17 19:09:05.199 +03:30 [DBG] Connection id "0HNAFD4I6KLDD" stopped.
+2025-02-17 19:09:05.199 +03:30 [DBG] Connection id "0HNAFD4I6KLDE" started.
+2025-02-17 19:09:05.200 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Categories/Sort - null null
+2025-02-17 19:09:05.202 +03:30 [DBG] The request path  does not match the path filter
+2025-02-17 19:09:05.204 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-02-17 19:09:05.263 +03:30 [DBG] 1 candidate(s) found for the request path '/api/Categories/Sort'
+2025-02-17 19:09:05.270 +03:30 [DBG] Endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)' with route pattern 'api/Categories/Sort' is valid for the request path '/api/Categories/Sort'
+2025-02-17 19:09:05.273 +03:30 [DBG] Request matched endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:09:05.283 +03:30 [INF] Executing endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:09:05.328 +03:30 [INF] Route matched with {action = "SortCategories", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SortCategories() on controller RealStateAPI.Controllers.CategoriesController (RealStateAPI).
+2025-02-17 19:09:05.330 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-17 19:09:05.331 +03:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-17 19:09:05.332 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-17 19:09:05.332 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-17 19:09:05.333 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-17 19:09:05.338 +03:30 [DBG] Executing controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:09:05.612 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-17 19:09:05.646 +03:30 [DBG] Executed controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:09:05.658 +03:30 [INF] Executing action method RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI) - Validation state: "Valid"
+2025-02-17 19:09:07.018 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:09:07.048 +03:30 [INF] Executed action method RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1380.5142ms.
+2025-02-17 19:09:07.071 +03:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2025-02-17 19:09:07.081 +03:30 [DBG] No information found on request to perform content negotiation.
+2025-02-17 19:09:07.081 +03:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-17 19:09:07.081 +03:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-17 19:09:07.085 +03:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-17 19:09:07.086 +03:30 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[RealStateAPI.Models.Category, RealStateAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 19:09:07.105 +03:30 [DBG] Buffering IAsyncEnumerable instance of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[RealStateAPI.Models.Category, RealStateAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 19:09:07.246 +03:30 [DBG] Compiling query expression: 
+'DbSet<Category>()
+    .OrderByDescending(c => c.Id)'
+2025-02-17 19:09:07.707 +03:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Category>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.ImageUrl (string) Required MaxLength(200), 1], [Property: Category.Name (string) Required MaxLength(200), 2] }
+        SELECT c.Id, c.ImageUrl, c.Name
+        FROM Category AS c
+        ORDER BY c.Id DESC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+    RealStateAPI.Context.ApiDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-17 19:09:07.791 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:09:07.843 +03:30 [DBG] Created DbConnection. (49ms).
+2025-02-17 19:09:07.852 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:08.621 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:08.629 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:09:08.646 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (11ms).
+2025-02-17 19:09:08.653 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (22ms).
+2025-02-17 19:09:08.671 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+ORDER BY [c].[Id] DESC
+2025-02-17 19:09:08.777 +03:30 [ERR] Failed executing DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+ORDER BY [c].[Id] DESC
+2025-02-17 19:09:08.787 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:08.807 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (13ms).
+2025-02-17 19:09:08.827 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'RealStateAPI.Context.ApiDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a27a16cf-177b-460a-990f-4fe69ae40ebf
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a27a16cf-177b-460a-990f-4fe69ae40ebf
+Error Number:208,State:1,Class:16
+2025-02-17 19:09:08.870 +03:30 [INF] Executed action RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI) in 3516.2131ms
+2025-02-17 19:09:08.877 +03:30 [INF] Executed endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:09:08.903 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.Mvc.NewtonsoftJson.AsyncEnumerableReader.ReadInternal[T](Object value, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.NewtonsoftJson.AsyncEnumerableReader.ReadInternal[T](Object value, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:a27a16cf-177b-460a-990f-4fe69ae40ebf
+Error Number:208,State:1,Class:16
+2025-02-17 19:09:08.953 +03:30 [DBG] Connection id "0HNAFD4I6KLDE" completed keep alive response.
+2025-02-17 19:09:08.975 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:09:09.004 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:09.012 +03:30 [DBG] Disposed connection to database '' on server '' (7ms).
+2025-02-17 19:09:09.015 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Categories/Sort - 500 null text/plain; charset=utf-8 3814.6564ms
+2025-02-17 19:09:26.080 +03:30 [INF] Application is shutting down...
+2025-02-17 19:09:26.085 +03:30 [DBG] Hosting stopping
+2025-02-17 19:09:26.107 +03:30 [DBG] Connection id "0HNAFD4I6KLDC" disconnecting.
+2025-02-17 19:09:26.107 +03:30 [DBG] Connection id "0HNAFD4I6KLDC" stopped.
+2025-02-17 19:09:26.108 +03:30 [DBG] Connection id "0HNAFD4I6KLDC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:09:26.112 +03:30 [DBG] Connection id "0HNAFD4I6KLDE" disconnecting.
+2025-02-17 19:09:26.112 +03:30 [DBG] Connection id "0HNAFD4I6KLDE" stopped.
+2025-02-17 19:09:26.112 +03:30 [DBG] Connection id "0HNAFD4I6KLDE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:09:26.120 +03:30 [DBG] Hosting stopped
+2025-02-17 19:09:38.029 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-17 19:09:38.121 +03:30 [DBG] Hosting starting
+2025-02-17 19:09:38.157 +03:30 [INF] Now listening on: http://localhost:5168
+2025-02-17 19:09:38.158 +03:30 [DBG] Loaded hosting startup assembly RealStateAPI
+2025-02-17 19:09:38.158 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-17 19:09:38.158 +03:30 [INF] Hosting environment: Development
+2025-02-17 19:09:38.159 +03:30 [INF] Content root path: /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI
+2025-02-17 19:09:38.159 +03:30 [DBG] Hosting started
+2025-02-17 19:09:38.503 +03:30 [DBG] Connection id "0HNAFD54T0I89" received FIN.
+2025-02-17 19:09:38.508 +03:30 [DBG] Connection id "0HNAFD54T0I89" accepted.
+2025-02-17 19:09:38.509 +03:30 [DBG] Connection id "0HNAFD54T0I89" started.
+2025-02-17 19:09:38.514 +03:30 [DBG] Connection id "0HNAFD54T0I89" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:09:38.516 +03:30 [DBG] Connection id "0HNAFD54T0I89" disconnecting.
+2025-02-17 19:09:38.519 +03:30 [DBG] Connection id "0HNAFD54T0I89" stopped.
+2025-02-17 19:09:38.759 +03:30 [DBG] Connection id "0HNAFD54T0I8A" accepted.
+2025-02-17 19:09:38.760 +03:30 [DBG] Connection id "0HNAFD54T0I8A" started.
+2025-02-17 19:09:38.856 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2025-02-17 19:09:38.871 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-17 19:09:39.096 +03:30 [DBG] Connection id "0HNAFD54T0I8A" completed keep alive response.
+2025-02-17 19:09:39.098 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 246.2588ms
+2025-02-17 19:09:39.351 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2025-02-17 19:09:39.758 +03:30 [DBG] Connection id "0HNAFD54T0I8A" completed keep alive response.
+2025-02-17 19:09:39.760 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 408.5136ms
+2025-02-17 19:09:41.046 +03:30 [DBG] Connection id "0HNAFD54T0I8B" accepted.
+2025-02-17 19:09:41.046 +03:30 [DBG] Connection id "0HNAFD54T0I8B" received FIN.
+2025-02-17 19:09:41.047 +03:30 [DBG] Connection id "0HNAFD54T0I8B" started.
+2025-02-17 19:09:41.047 +03:30 [DBG] Connection id "0HNAFD54T0I8C" accepted.
+2025-02-17 19:09:41.047 +03:30 [DBG] Connection id "0HNAFD54T0I8B" disconnecting.
+2025-02-17 19:09:41.047 +03:30 [DBG] Connection id "0HNAFD54T0I8C" started.
+2025-02-17 19:09:41.047 +03:30 [DBG] Connection id "0HNAFD54T0I8B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:09:41.049 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Categories/Sort - null null
+2025-02-17 19:09:41.050 +03:30 [DBG] Connection id "0HNAFD54T0I8B" stopped.
+2025-02-17 19:09:41.053 +03:30 [DBG] The request path  does not match the path filter
+2025-02-17 19:09:41.056 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-02-17 19:09:41.144 +03:30 [DBG] 1 candidate(s) found for the request path '/api/Categories/Sort'
+2025-02-17 19:09:41.162 +03:30 [DBG] Endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)' with route pattern 'api/Categories/Sort' is valid for the request path '/api/Categories/Sort'
+2025-02-17 19:09:41.165 +03:30 [DBG] Request matched endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:09:41.175 +03:30 [INF] Executing endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:09:41.231 +03:30 [INF] Route matched with {action = "SortCategories", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SortCategories() on controller RealStateAPI.Controllers.CategoriesController (RealStateAPI).
+2025-02-17 19:09:41.235 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-17 19:09:41.236 +03:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-17 19:09:41.237 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-17 19:09:41.239 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-17 19:09:41.240 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-17 19:09:41.249 +03:30 [DBG] Executing controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:09:41.648 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-17 19:09:41.709 +03:30 [DBG] Executed controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:09:41.728 +03:30 [INF] Executing action method RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI) - Validation state: "Valid"
+2025-02-17 19:09:43.156 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:09:43.232 +03:30 [DBG] Compiling query expression: 
+'DbSet<Category>()
+    .OrderByDescending(c => c.Id)'
+2025-02-17 19:09:43.678 +03:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Category>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.ImageUrl (string) Required MaxLength(200), 1], [Property: Category.Name (string) Required MaxLength(200), 2] }
+        SELECT c.Id, c.ImageUrl, c.Name
+        FROM Category AS c
+        ORDER BY c.Id DESC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+    RealStateAPI.Context.ApiDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-17 19:09:43.743 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:09:43.787 +03:30 [DBG] Created DbConnection. (40ms).
+2025-02-17 19:09:43.796 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:44.521 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:44.531 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:09:44.553 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (10ms).
+2025-02-17 19:09:44.561 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (30ms).
+2025-02-17 19:09:44.584 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+ORDER BY [c].[Id] DESC
+2025-02-17 19:09:44.675 +03:30 [ERR] Failed executing DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+ORDER BY [c].[Id] DESC
+2025-02-17 19:09:44.679 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:44.708 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (18ms).
+2025-02-17 19:09:44.740 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'RealStateAPI.Context.ApiDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+2025-02-17 19:09:44.759 +03:30 [INF] Executed action RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI) in 3508.1661ms
+2025-02-17 19:09:44.761 +03:30 [INF] Executed endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:09:44.762 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RealStateAPI.Controllers.CategoriesController.SortCategories() in /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/Controllers/CategoriesController.cs:line 36
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+2025-02-17 19:09:44.790 +03:30 [DBG] Connection id "0HNAFD54T0I8C" completed keep alive response.
+2025-02-17 19:09:44.800 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:09:44.818 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:09:44.828 +03:30 [DBG] Disposed connection to database '' on server '' (8ms).
+2025-02-17 19:09:44.829 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Categories/Sort - 500 null text/plain; charset=utf-8 3779.9145ms
+2025-02-17 19:10:15.188 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Categories - null null
+2025-02-17 19:10:15.188 +03:30 [DBG] The request path  does not match the path filter
+2025-02-17 19:10:15.189 +03:30 [DBG] No candidates found for the request path '/api/Categories'
+2025-02-17 19:10:15.189 +03:30 [DBG] Request did not match any endpoints
+2025-02-17 19:10:15.190 +03:30 [DBG] Connection id "0HNAFD54T0I8C" completed keep alive response.
+2025-02-17 19:10:15.190 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Categories - 404 0 null 1.8704ms
+2025-02-17 19:10:15.191 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5168/api/Categories, Response status code: 404
+2025-02-17 19:10:34.741 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Categories/GetAll - null null
+2025-02-17 19:10:34.742 +03:30 [DBG] The request path  does not match the path filter
+2025-02-17 19:10:34.743 +03:30 [DBG] 1 candidate(s) found for the request path '/api/Categories/GetAll'
+2025-02-17 19:10:34.745 +03:30 [DBG] Endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)' with route pattern 'api/Categories/GetAll' is valid for the request path '/api/Categories/GetAll'
+2025-02-17 19:10:34.745 +03:30 [DBG] Request matched endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:10:34.746 +03:30 [INF] Executing endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:10:34.753 +03:30 [INF] Route matched with {action = "Get", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller RealStateAPI.Controllers.CategoriesController (RealStateAPI).
+2025-02-17 19:10:34.753 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-17 19:10:34.754 +03:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-17 19:10:34.754 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-17 19:10:34.754 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-17 19:10:34.754 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-17 19:10:34.755 +03:30 [DBG] Executing controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:10:34.758 +03:30 [DBG] Executed controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:10:34.759 +03:30 [INF] Executing action method RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI) - Validation state: "Valid"
+2025-02-17 19:10:34.807 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:10:34.808 +03:30 [DBG] Compiling query expression: 
+'DbSet<Category>()'
+2025-02-17 19:10:34.821 +03:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Category>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.ImageUrl (string) Required MaxLength(200), 1], [Property: Category.Name (string) Required MaxLength(200), 2] }
+        SELECT c.Id, c.ImageUrl, c.Name
+        FROM Category AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+    RealStateAPI.Context.ApiDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-17 19:10:34.823 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:10:34.824 +03:30 [DBG] Created DbConnection. (0ms).
+2025-02-17 19:10:34.824 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:34.827 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:34.828 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:10:34.830 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:10:34.831 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-02-17 19:10:34.832 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+2025-02-17 19:10:34.841 +03:30 [ERR] Failed executing DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+2025-02-17 19:10:34.842 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:34.843 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:10:34.846 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'RealStateAPI.Context.ApiDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+2025-02-17 19:10:34.852 +03:30 [INF] Executed action RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI) in 97.0062ms
+2025-02-17 19:10:34.852 +03:30 [INF] Executed endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:10:34.853 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RealStateAPI.Controllers.CategoriesController.Get() in /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/Controllers/CategoriesController.cs:line 23
+   at lambda_method7(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+2025-02-17 19:10:34.871 +03:30 [DBG] Connection id "0HNAFD54T0I8C" completed keep alive response.
+2025-02-17 19:10:34.872 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:10:34.873 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:34.873 +03:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-17 19:10:34.874 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Categories/GetAll - 500 null text/plain; charset=utf-8 132.3388ms
+2025-02-17 19:10:56.158 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Categories/GetAll - null null
+2025-02-17 19:10:56.159 +03:30 [DBG] The request path  does not match the path filter
+2025-02-17 19:10:56.159 +03:30 [DBG] 1 candidate(s) found for the request path '/api/Categories/GetAll'
+2025-02-17 19:10:56.159 +03:30 [DBG] Endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)' with route pattern 'api/Categories/GetAll' is valid for the request path '/api/Categories/GetAll'
+2025-02-17 19:10:56.159 +03:30 [DBG] Request matched endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:10:56.159 +03:30 [INF] Executing endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:10:56.160 +03:30 [INF] Route matched with {action = "Get", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller RealStateAPI.Controllers.CategoriesController (RealStateAPI).
+2025-02-17 19:10:56.160 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-17 19:10:56.160 +03:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-17 19:10:56.160 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-17 19:10:56.160 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-17 19:10:56.160 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-17 19:10:56.161 +03:30 [DBG] Executing controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:10:56.163 +03:30 [DBG] Executed controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:10:56.164 +03:30 [INF] Executing action method RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI) - Validation state: "Valid"
+2025-02-17 19:10:56.260 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:10:56.262 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:10:56.262 +03:30 [DBG] Created DbConnection. (0ms).
+2025-02-17 19:10:56.262 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:56.263 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:56.263 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:10:56.263 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:10:56.263 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:10:56.263 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+2025-02-17 19:10:56.267 +03:30 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Category] AS [c]
+2025-02-17 19:10:56.267 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:56.267 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:10:56.268 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'RealStateAPI.Context.ApiDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+2025-02-17 19:10:56.269 +03:30 [INF] Executed action RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI) in 108.4556ms
+2025-02-17 19:10:56.269 +03:30 [INF] Executed endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:10:56.270 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Category'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RealStateAPI.Controllers.CategoriesController.Get() in /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI/Controllers/CategoriesController.cs:line 23
+   at lambda_method7(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:9f1025ff-d4da-42fa-995b-9865c8c32d4a
+Error Number:208,State:1,Class:16
+2025-02-17 19:10:56.275 +03:30 [DBG] Connection id "0HNAFD54T0I8A" completed keep alive response.
+2025-02-17 19:10:56.275 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:10:56.275 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:10:56.275 +03:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-17 19:10:56.275 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Categories/GetAll - 500 null text/plain; charset=utf-8 117.0663ms
+2025-02-17 19:11:12.013 +03:30 [INF] Application is shutting down...
+2025-02-17 19:11:12.018 +03:30 [DBG] Hosting stopping
+2025-02-17 19:11:12.043 +03:30 [DBG] Connection id "0HNAFD54T0I8A" disconnecting.
+2025-02-17 19:11:12.047 +03:30 [DBG] Connection id "0HNAFD54T0I8A" stopped.
+2025-02-17 19:11:12.047 +03:30 [DBG] Connection id "0HNAFD54T0I8C" disconnecting.
+2025-02-17 19:11:12.047 +03:30 [DBG] Connection id "0HNAFD54T0I8A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:11:12.048 +03:30 [DBG] Connection id "0HNAFD54T0I8C" stopped.
+2025-02-17 19:11:12.048 +03:30 [DBG] Connection id "0HNAFD54T0I8C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:11:12.070 +03:30 [DBG] Hosting stopped
+2025-02-17 19:11:52.268 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-17 19:11:52.623 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:11:53.379 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:11:53.404 +03:30 [DBG] Created DbConnection. (23ms).
+2025-02-17 19:11:53.409 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.691 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.695 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-17 19:11:53.700 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-02-17 19:11:53.701 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (7ms).
+2025-02-17 19:11:53.706 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-17 19:11:53.726 +03:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-17 19:11:53.728 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.735 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (3ms).
+2025-02-17 19:11:53.737 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-17 19:11:53.737 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-17 19:11:53.737 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-02-17 19:11:53.738 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.738 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.739 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-17 19:11:53.752 +03:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-17 19:11:53.752 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.752 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:11:53.764 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.765 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.765 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:11:53.765 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:11:53.765 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:11:53.765 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-17 19:11:53.771 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-17 19:11:53.773 +03:30 [DBG] Closing data reader to 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.774 +03:30 [DBG] A data reader for 'RealEstateAPI_DB' on server 'localhost' is being disposed after spending 1ms reading results.
+2025-02-17 19:11:53.775 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.775 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:11:53.822 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:11:53.823 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:11:53.824 +03:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-17 19:12:31.768 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-17 19:12:32.150 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:12:32.928 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:12:47.926 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-17 19:12:48.308 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:12:48.320 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:12:48.347 +03:30 [DBG] Created DbConnection. (25ms).
+2025-02-17 19:12:48.350 +03:30 [DBG] Migrating using database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.354 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.635 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.640 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-17 19:12:48.645 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-02-17 19:12:48.646 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (7ms).
+2025-02-17 19:12:48.651 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-17 19:12:48.671 +03:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-17 19:12:48.673 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.679 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (3ms).
+2025-02-17 19:12:48.681 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-17 19:12:48.681 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-17 19:12:48.682 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-02-17 19:12:48.682 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.683 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.683 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-17 19:12:48.694 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-17 19:12:48.694 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.695 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:12:48.695 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.695 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.696 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-17 19:12:48.696 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-17 19:12:48.696 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-17 19:12:48.696 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-17 19:12:48.698 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-17 19:12:48.698 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.698 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:12:48.698 +03:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-17 19:12:48.698 +03:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-17 19:12:48.698 +03:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-02-17 19:12:48.699 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.699 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.699 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-17 19:12:48.700 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-17 19:12:48.700 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.700 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:12:48.716 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.716 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.716 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:12:48.716 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:12:48.717 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:12:48.717 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-17 19:12:48.719 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-17 19:12:48.722 +03:30 [DBG] Closing data reader to 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.724 +03:30 [DBG] A data reader for 'RealEstateAPI_DB' on server 'localhost' is being disposed after spending 3ms reading results.
+2025-02-17 19:12:48.724 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.724 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:12:48.737 +03:30 [INF] Applying migration '20250215194545_Initial'.
+2025-02-17 19:12:48.767 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.767 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.772 +03:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-02-17 19:12:48.781 +03:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-02-17 19:12:48.783 +03:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-17 19:12:48.783 +03:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-17 19:12:48.784 +03:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2025-02-17 19:12:48.785 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [ImageUrl] nvarchar(max) NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+2025-02-17 19:12:48.801 +03:30 [ERR] Failed executing DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [ImageUrl] nvarchar(max) NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+2025-02-17 19:12:48.803 +03:30 [DBG] Disposing transaction.
+2025-02-17 19:12:48.805 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.805 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:12:48.806 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:12:48.808 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:12:48.809 +03:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-17 19:14:10.526 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-17 19:14:10.628 +03:30 [DBG] Hosting starting
+2025-02-17 19:14:10.668 +03:30 [INF] Now listening on: http://localhost:5168
+2025-02-17 19:14:10.668 +03:30 [DBG] Loaded hosting startup assembly RealStateAPI
+2025-02-17 19:14:10.668 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-17 19:14:10.668 +03:30 [INF] Hosting environment: Development
+2025-02-17 19:14:10.669 +03:30 [INF] Content root path: /home/amirhossein/RiderProjects/RealEstateAPI/RealStateAPI
+2025-02-17 19:14:10.669 +03:30 [DBG] Hosting started
+2025-02-17 19:14:10.683 +03:30 [DBG] Connection id "0HNAFD7M0NFNK" received FIN.
+2025-02-17 19:14:10.689 +03:30 [DBG] Connection id "0HNAFD7M0NFNK" accepted.
+2025-02-17 19:14:10.690 +03:30 [DBG] Connection id "0HNAFD7M0NFNK" started.
+2025-02-17 19:14:10.694 +03:30 [DBG] Connection id "0HNAFD7M0NFNK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:14:10.700 +03:30 [DBG] Connection id "0HNAFD7M0NFNK" disconnecting.
+2025-02-17 19:14:10.705 +03:30 [DBG] Connection id "0HNAFD7M0NFNK" stopped.
+2025-02-17 19:14:10.886 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" accepted.
+2025-02-17 19:14:10.886 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" started.
+2025-02-17 19:14:11.030 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2025-02-17 19:14:11.038 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-17 19:14:11.212 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" completed keep alive response.
+2025-02-17 19:14:11.214 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 191.3669ms
+2025-02-17 19:14:11.477 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2025-02-17 19:14:11.623 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" completed keep alive response.
+2025-02-17 19:14:11.624 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.4039ms
+2025-02-17 19:14:20.703 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Categories/GetAll - null null
+2025-02-17 19:14:20.708 +03:30 [DBG] The request path  does not match the path filter
+2025-02-17 19:14:20.709 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-02-17 19:14:20.737 +03:30 [DBG] 1 candidate(s) found for the request path '/api/Categories/GetAll'
+2025-02-17 19:14:20.741 +03:30 [DBG] Endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)' with route pattern 'api/Categories/GetAll' is valid for the request path '/api/Categories/GetAll'
+2025-02-17 19:14:20.742 +03:30 [DBG] Request matched endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:14:20.748 +03:30 [INF] Executing endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:14:20.766 +03:30 [INF] Route matched with {action = "Get", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller RealStateAPI.Controllers.CategoriesController (RealStateAPI).
+2025-02-17 19:14:20.769 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-17 19:14:20.769 +03:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-17 19:14:20.770 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-17 19:14:20.770 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-17 19:14:20.771 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-17 19:14:20.774 +03:30 [DBG] Executing controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:14:20.904 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-17 19:14:20.928 +03:30 [DBG] Executed controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:14:20.937 +03:30 [INF] Executing action method RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI) - Validation state: "Valid"
+2025-02-17 19:14:21.619 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:14:21.656 +03:30 [DBG] Compiling query expression: 
+'DbSet<Category>()'
+2025-02-17 19:14:21.855 +03:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Category>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.ImageUrl (string) Required MaxLength(200), 1], [Property: Category.Name (string) Required MaxLength(200), 2] }
+        SELECT c.Id, c.ImageUrl, c.Name
+        FROM Categories AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+    RealStateAPI.Context.ApiDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-17 19:14:21.907 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:14:21.942 +03:30 [DBG] Created DbConnection. (33ms).
+2025-02-17 19:14:21.949 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:22.417 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:22.422 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:14:22.430 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2025-02-17 19:14:22.432 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2025-02-17 19:14:22.440 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-17 19:14:22.476 +03:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-17 19:14:22.519 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:22.538 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:22.538 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:22.539 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:22.539 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:22.543 +03:30 [DBG] Closing data reader to 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:22.552 +03:30 [DBG] A data reader for 'RealEstateAPI_DB' on server 'localhost' is being disposed after spending 66ms reading results.
+2025-02-17 19:14:22.556 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:22.564 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (8ms).
+2025-02-17 19:14:22.569 +03:30 [INF] Executed action method RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1627.1429ms.
+2025-02-17 19:14:22.573 +03:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2025-02-17 19:14:22.577 +03:30 [DBG] No information found on request to perform content negotiation.
+2025-02-17 19:14:22.578 +03:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-17 19:14:22.578 +03:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-17 19:14:22.580 +03:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-17 19:14:22.581 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RealStateAPI.Models.Category, RealStateAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 19:14:22.727 +03:30 [INF] Executed action RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI) in 1950.9477ms
+2025-02-17 19:14:22.728 +03:30 [INF] Executed endpoint 'RealStateAPI.Controllers.CategoriesController.Get (RealStateAPI)'
+2025-02-17 19:14:22.728 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" completed keep alive response.
+2025-02-17 19:14:22.731 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:14:22.737 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:22.740 +03:30 [DBG] Disposed connection to database '' on server '' (3ms).
+2025-02-17 19:14:22.741 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Categories/GetAll - 200 268 application/json; charset=utf-8 2037.3811ms
+2025-02-17 19:14:48.210 +03:30 [DBG] Connection id "0HNAFD7M0NFNM" received FIN.
+2025-02-17 19:14:48.211 +03:30 [DBG] Connection id "0HNAFD7M0NFNM" accepted.
+2025-02-17 19:14:48.211 +03:30 [DBG] Connection id "0HNAFD7M0NFNM" started.
+2025-02-17 19:14:48.211 +03:30 [DBG] Connection id "0HNAFD7M0NFNN" accepted.
+2025-02-17 19:14:48.211 +03:30 [DBG] Connection id "0HNAFD7M0NFNN" started.
+2025-02-17 19:14:48.211 +03:30 [DBG] Connection id "0HNAFD7M0NFNM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:14:48.211 +03:30 [DBG] Connection id "0HNAFD7M0NFNM" disconnecting.
+2025-02-17 19:14:48.211 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Categories/Sort - null null
+2025-02-17 19:14:48.212 +03:30 [DBG] Connection id "0HNAFD7M0NFNM" stopped.
+2025-02-17 19:14:48.212 +03:30 [DBG] The request path  does not match the path filter
+2025-02-17 19:14:48.213 +03:30 [DBG] 1 candidate(s) found for the request path '/api/Categories/Sort'
+2025-02-17 19:14:48.213 +03:30 [DBG] Endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)' with route pattern 'api/Categories/Sort' is valid for the request path '/api/Categories/Sort'
+2025-02-17 19:14:48.213 +03:30 [DBG] Request matched endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:14:48.213 +03:30 [INF] Executing endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:14:48.216 +03:30 [INF] Route matched with {action = "SortCategories", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SortCategories() on controller RealStateAPI.Controllers.CategoriesController (RealStateAPI).
+2025-02-17 19:14:48.216 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-17 19:14:48.216 +03:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-17 19:14:48.216 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-17 19:14:48.216 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-17 19:14:48.216 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-17 19:14:48.217 +03:30 [DBG] Executing controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:14:48.220 +03:30 [DBG] Executed controller factory for controller RealStateAPI.Controllers.CategoriesController (RealStateAPI)
+2025-02-17 19:14:48.220 +03:30 [INF] Executing action method RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI) - Validation state: "Valid"
+2025-02-17 19:14:48.290 +03:30 [DBG] Entity Framework Core 8.0.13 initialized 'ApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.13' with options: None
+2025-02-17 19:14:48.328 +03:30 [DBG] Compiling query expression: 
+'DbSet<Category>()
+    .OrderByDescending(c => c.Id)'
+2025-02-17 19:14:48.556 +03:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Category>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.ImageUrl (string) Required MaxLength(200), 1], [Property: Category.Name (string) Required MaxLength(200), 2] }
+        SELECT c.Id, c.ImageUrl, c.Name
+        FROM Categories AS c
+        ORDER BY c.Id DESC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+    RealStateAPI.Context.ApiDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-17 19:14:48.560 +03:30 [DBG] Creating DbConnection.
+2025-02-17 19:14:48.561 +03:30 [DBG] Created DbConnection. (1ms).
+2025-02-17 19:14:48.561 +03:30 [DBG] Opening connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:48.565 +03:30 [DBG] Opened connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:48.565 +03:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-17 19:14:48.566 +03:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:14:48.566 +03:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-17 19:14:48.566 +03:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+2025-02-17 19:14:48.589 +03:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ImageUrl], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+2025-02-17 19:14:48.590 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:48.591 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:48.592 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:48.592 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:48.592 +03:30 [DBG] Context 'ApiDbContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-17 19:14:48.592 +03:30 [DBG] Closing data reader to 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:48.593 +03:30 [DBG] A data reader for 'RealEstateAPI_DB' on server 'localhost' is being disposed after spending 3ms reading results.
+2025-02-17 19:14:48.593 +03:30 [DBG] Closing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:48.594 +03:30 [DBG] Closed connection to database 'RealEstateAPI_DB' on server 'localhost' (0ms).
+2025-02-17 19:14:48.595 +03:30 [INF] Executed action method RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 374.3948ms.
+2025-02-17 19:14:48.597 +03:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2025-02-17 19:14:48.598 +03:30 [DBG] No information found on request to perform content negotiation.
+2025-02-17 19:14:48.598 +03:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-17 19:14:48.598 +03:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-17 19:14:48.598 +03:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-17 19:14:48.598 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RealStateAPI.Models.Category, RealStateAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-17 19:14:48.599 +03:30 [INF] Executed action RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI) in 382.9471ms
+2025-02-17 19:14:48.600 +03:30 [INF] Executed endpoint 'RealStateAPI.Controllers.CategoriesController.SortCategories (RealStateAPI)'
+2025-02-17 19:14:48.600 +03:30 [DBG] Connection id "0HNAFD7M0NFNN" completed keep alive response.
+2025-02-17 19:14:48.600 +03:30 [DBG] 'ApiDbContext' disposed.
+2025-02-17 19:14:48.601 +03:30 [DBG] Disposing connection to database 'RealEstateAPI_DB' on server 'localhost'.
+2025-02-17 19:14:48.601 +03:30 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-17 19:14:48.602 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Categories/Sort - 200 268 application/json; charset=utf-8 390.8639ms
+2025-02-17 19:15:40.048 +03:30 [INF] Application is shutting down...
+2025-02-17 19:15:40.054 +03:30 [DBG] Hosting stopping
+2025-02-17 19:15:40.073 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" disconnecting.
+2025-02-17 19:15:40.075 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" stopped.
+2025-02-17 19:15:40.075 +03:30 [DBG] Connection id "0HNAFD7M0NFNL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:15:40.076 +03:30 [DBG] Connection id "0HNAFD7M0NFNN" disconnecting.
+2025-02-17 19:15:40.076 +03:30 [DBG] Connection id "0HNAFD7M0NFNN" stopped.
+2025-02-17 19:15:40.076 +03:30 [DBG] Connection id "0HNAFD7M0NFNN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-17 19:15:40.084 +03:30 [DBG] Hosting stopped

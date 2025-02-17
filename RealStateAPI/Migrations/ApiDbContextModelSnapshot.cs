@@ -41,7 +41,7 @@ namespace RealStateAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Category");
                 });
 #pragma warning restore 612, 618
         }
